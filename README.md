@@ -1,11 +1,11 @@
-# usenixbadges.sty --- affix USENIX Artifact Evaluation badges
+# ieeebadges.sty --- affix IEEE Security & Privacy Artifact Evaluation badges
 
-The `usenixbadges` LaTeX style file affixes USENIX Artifact Evaluation
-badges to the front page of your USENIX-formatted paper.
+The `ieeebadges` LaTeX style file affixes IEEE Security & Privacy Artifact
+Evaluation badges to the front page of your IEEE-formatted paper.
 
 ## INSTALLATION
 
-Put `usenixbadges.sty` and the `usenixbadges-*.pdf` graphics files in
+Put `ieeebadges.sty` and the `ieeebadges-*.pdf` graphics files in
 the directory that contains the LaTeX source for your paper.  (Really,
 you can put them anywhere in LaTeX's search path, but the simplest
 thing is to put the files in the same directory as your paper's LaTeX
@@ -16,7 +16,7 @@ source files.)
 In the preamble of your LaTeX document, insert a line like this:
 
 ```
-  \usepackage[<options>]{usenixbadges}
+  \usepackage[<options>]{ieeebadges}
 ```
 
 In the options, list the badges that have been awarded to your paper.
@@ -30,15 +30,15 @@ Example:
 
 ```
   %% Affix the indicated badges to the paper.
-  \usepackage[available,functional]{usenixbadges}
+  \usepackage[available,functional]{ieeebadges}
 ```
 
 Tips:
 
-In your LaTeX document, the `\usepackage[...]{usenixbadges}` directive
+In your LaTeX document, the `\usepackage[...]{ieeebadges}` directive
 must come after `\documentclass` and before `\begin{document}`.
 
 If your LaTeX document has many `\usepackage` directives, put
-`\usepackage[...]{usenixbadges}` near the end of those.  This may
+`\usepackage[...]{ieeebadges}` near the end of those.  This may
 avoid problems relating to conflicting options for the `graphicx`
 package.
