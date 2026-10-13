@@ -1,6 +1,6 @@
 %% -*- mode: LaTeX -*-
 %%
-%% ieeebadges.sty --- affix USENIX Artifact Evaluation badges
+%% ieeebadges.sty --- affix IEEE S&P Artifact Evaluation badges
 %%
 %% Usage:
 %%   \usepackage[<options>]{ieeebadges}
@@ -18,13 +18,17 @@
 %%     Initial implementation for OSDI 2020 by Eric Eide <eeide@cs.utah.edu>
 %%   1.1 (Oct 16 2025):
 %%     ~Stealing~ adapting to IEEE Security and Privacy AE 2025, Manuel Egele <megele@bu.edu>
+%%   1.2 (Oct 13 2026):
+%%     All three badges in one 3-page ieeebadges.pdf (page 1 available,
+%%     2 functional, 3 reproduced) sharing a single downsampled logo image,
+%%     so the logo is embedded once: badges add ~45 KB to a paper, not 2.4 MB.
 %%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\def\ieee@fileversion{1.0}
-\def\ieee@filedate{2020/10/11}
+\def\ieee@fileversion{1.2}
+\def\ieee@filedate{2026/10/13}
 \ProvidesPackage{ieeebadges}
   [\ieee@filedate\space v\ieee@fileversion\space IEEE Security \& Privacy Artifact Evaluation Badges]
 
@@ -66,17 +70,17 @@
     \makebox[7in][r]{%
       \ifieee@availablebadge%
         \raisebox{-\height}{%
-          \includegraphics[width=0.6in]{ieeebadges-available}}%
+          \includegraphics[width=0.6in,page=1]{ieeebadges}}%
       \fi%
       \ifieee@functionalbadge%
         \hspace{10pt}%
         \raisebox{-\height}{%
-          \includegraphics[width=0.6in]{ieeebadges-functional}}%
+          \includegraphics[width=0.6in,page=2]{ieeebadges}}%
       \fi%
       \ifieee@reproducedbadge%
         \hspace{10pt}%
         \raisebox{-\height}{%
-          \includegraphics[width=0.6in]{ieeebadges-reproduced}}%
+          \includegraphics[width=0.6in,page=3]{ieeebadges}}%
       \fi%
     }%
     \vskip-\prevdepth}%

@@ -5,7 +5,7 @@ Evaluation badges to the front page of your IEEE-formatted paper.
 
 ## INSTALLATION
 
-Put `ieeebadges.sty` and the `ieeebadges-*.pdf` graphics files in
+Put `ieeebadges.sty` and the `ieeebadges.pdf` graphics file in
 the directory that contains the LaTeX source for your paper.  (Really,
 you can put them anywhere in LaTeX's search path, but the simplest
 thing is to put the files in the same directory as your paper's LaTeX
